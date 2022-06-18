@@ -1,0 +1,36 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:insert="~{head.html}">
+</head>
+<body>
+  <div class="container">
+    <div th:insert="~{navbar.html}"></div>
+  </div>
+  <div class="container">
+    <div class="bg-white">
+      <h2 class="text-center mt-4">Welcome to BITLAB SHOP</h2>
+      <p class="text-black-50 text-center">Electronic devices with high quality and service</p>
+      <div class="container mx-auto">
+        <div class="col-8 card-deck row mx-auto">
+          <div class="col-4 p-2 mx-auto" th:each="item : ${all_items}">
+            <div class="card border-light shadow rounded">
+              <div class="card-header bg-light text-center">
+                <span th:text="${item.getName()}"></span>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title text-success" th:text="${'$' + item.getPrice()}"></h5>
+                <p class="card-text text-black-50" th:text="${item.getDescription()}"></p>
+                <div>
+                  <a th:href="@{'/details/' + ${item.getId()}}" class="btn btn-success btn-sm px-5">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
