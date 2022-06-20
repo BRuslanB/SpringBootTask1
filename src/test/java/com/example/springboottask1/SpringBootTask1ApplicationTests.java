@@ -1,10 +1,10 @@
-package com.example.sprintboottask1;
+package com.example.springboottask1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SprintBootTask1ApplicationTests {
+class SpringBootTask1ApplicationTests {
 
     @Test
     void contextLoads() {

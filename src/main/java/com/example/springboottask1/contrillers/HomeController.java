@@ -1,7 +1,7 @@
-package com.example.sprintboottask1.contrillers;
+package com.example.springboottask1.contrillers;
 
-import com.example.sprintboottask1.db.DBManager;
-import com.example.sprintboottask1.db.Items;
+import com.example.springboottask1.db.DBManager;
+import com.example.springboottask1.db.Items;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

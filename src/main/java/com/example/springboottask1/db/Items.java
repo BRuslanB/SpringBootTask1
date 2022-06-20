@@ -1,4 +1,4 @@
-package com.example.sprintboottask1.db;
+package com.example.springboottask1.db;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
